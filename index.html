@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AROMA | Кофейня</title>
+    <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+    <link rel="preload" as="image" href="img/girl-with-short-hair-red-lipstick-dressed-warm-sweater-enjoying-tea-with-croissant-cozy-cafe.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">AROMA</a>
+            <ul class="nav-links">
+                <li><a href="#home">Главная</a></li>
+                <li><a href="#about">О нас</a></li>
+                <li><a href="#menu">Меню</a></li>
+                <li><a href="#gallery">Галерея</a></li>
+                <li><a href="#reservation">Бронирование</a></li>
+                <li><a href="#contact">Контакты</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">AROMA</h1>
+            <p class="hero-subtitle">Место, где рождается вкус</p>
+            <a href="#menu" class="btn btn-hero">Посмотреть меню</a>
+        </div>
+        <div class="scroll-indicator">
+            <span>Прокрутите вниз</span>
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-title">
+                <h2>О нас</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Добро пожаловать в AROMA — вашу идеальную кофейню. Мы создали пространство, где каждый глоток кофе становится маленьким путешествием, а атмосфера вдохновляет на новые идеи.</p>
+                    <p>Наши бариста — настоящие мастера своего дела, которые с любовью готовят каждый напиток. Мы используем только лучшие сорта кофе, обжаренные специально для нас.</p>
+                    <div class="features">
+                        <div class="feature" data-aos="fade-up" data-aos-delay="100">
+                            <i class="fas fa-fire"></i>
+                            <h3>Свежая обжарка</h3>
+                        </div>
+                        <div class="feature" data-aos="fade-up" data-aos-delay="200">
+                            <i class="fas fa-leaf"></i>
+                            <h3>Натуральные продукты</h3>
+                        </div>
+                        <div class="feature" data-aos="fade-up" data-aos-delay="300">
+                            <i class="fas fa-heart"></i>
+                            <h3>Уютная атмосфера</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <picture>
+                        <source srcset="img/cozy-cafe-interior-desktop.webp" type="image/webp">
+                        <img src="img/cozy-cafe-interior.jpg" alt="Интерьер кофейни">
+                    </picture>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu">
+        <div class="container">
+            <div class="section-title">
+                <h2>Наше меню</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="menu-categories">
+                <button class="menu-btn active" data-filter="all">Все</button>
+                <button class="menu-btn" data-filter="coffee">Кофе</button>
+                <button class="menu-btn" data-filter="tea">Чай</button>
+                <button class="menu-btn" data-filter="dessert">Десерты</button>
+                <button class="menu-btn" data-filter="food">Еда</button>
+            </div>
+            <div class="menu-carousel">
+                <button class="carousel-btn prev-btn" aria-label="Предыдущие">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <div class="menu-items">
+                    <!-- Coffee -->
+                    <div class="menu-item" data-category="coffee">
+                        <picture>
+                            <source srcset="img/closeup-classic-fresh-espresso-served-dark-surface-desktop.webp" type="image/webp">
+                            <img src="img/closeup-classic-fresh-espresso-served-dark-surface.jpg" alt="Эспрессо">
+                        </picture>
+                        <div class="menu-item-content">
+                            <h3>Эспрессо</h3>
+                            <p>Насыщенный черный кофе</p>
+                            <span class="price">180 ₽</span>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-category="coffee">
+                        <picture>
+                            <source srcset="img/glass-cappuccino-with-cream-desktop.webp" type="image/webp">
+                            <img src="img/glass-cappuccino-with-cream.jpg" alt="Капучино">
+                        </picture>
+                        <div class="menu-item-content">
+                            <h3>Капучино</h3>
+                            <p>Классический итальянский кофе с молочной пеной</p>
+                            <span class="price">250 ₽</span>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-category="coffee">
+                        <picture>
+                            <source srcset="img/close-up-latte-art-desktop.webp" type="image/webp">
+                            <img src="img/close-up-latte-art.jpg" alt="Латте">
+                        </picture>
+                        <div class="menu-item-content">
+                            <h3>Латте</h3>
+                            <p>Нежный кофе с большим количеством молока</p>
+                            <span class="price">280 ₽</span>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-category="coffee">
+                        <picture>
+                            <source srcset="img/high-view-glass-cappucino-with-coffee-beans-desktop.webp" type="image/webp">
+                            <img src="img/high-view-glass-cappucino-with-coffee-beans.jpg" alt="Раф">
+                        </picture>
+                        <div class="menu-item-content">
+                            <h3>Раф ванильный</h3>
+                            <p>Кофе со сливками и ванильным сиропом</p>
+                            <span class="price">320 ₽</span>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-category="coffee">
+                        <picture>
+                            <source srcset="img/delicious-quality-coffee-cup-desktop.webp" type="image/webp">
+                            <img src="img/delicious-quality-coffee-cup.jpg" alt="Флэт Уайт">
+                        </picture>
+                        <div class="menu-item-content">
+                            <h3>Флэт Уайт</h3>
+                            <p>Двойной эспрессо с бархатистым молоком</p>
+                            <span class="price">290 ₽</span>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-category="coffee">
+                        <picture>
+                            <source srcset="img/cup-cappuccino-with-coffee-beans-table-desktop.webp" type="image/webp">
+                            <img src="img/cup-cappuccino-with-coffee-beans-table.jpg" alt="Мокко">
+                        </picture>
+                        <div class="menu-item-content">
+                            <h3>Мокко</h3>
+                            <p>Кофе с шоколадом и взбитыми сливками</p>
+                            <span class="price">340 ₽</span>
+                        </div>
+                    </div>
+                    <!-- Tea -->
+                    <div class="menu-item" data-category="tea">
+                        <picture>
+                            <source srcset="img/front-view-cup-tea-with-lemon-cinnamon-kettle-grey-desk-desktop.webp" type="image/webp">
+                            <img src="img/front-view-cup-tea-with-lemon-cinnamon-kettle-grey-desk.jpg" alt="Чай с чабрецом">
+                        </picture>
+                        <div class="menu-item-content">
+                            <h3>Чай с чабрецом</h3>
+                            <p>Ароматный травяной чай с лимоном и корицей</p>
+                            <span class="price">200 ₽</span>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-category="tea">
+                        <picture>
+                            <source srcset="img/girl-with-short-hair-red-lipstick-dressed-warm-sweater-enjoying-tea-with-croissant-cozy-cafe-desktop.webp" type="image/webp">
+                            <img src="img/girl-with-short-hair-red-lipstick-dressed-warm-sweater-enjoying-tea-with-croissant-cozy-cafe.jpg" alt="Матча">
+                        </picture>
+                        <div class="menu-item-content">
+                            <h3>Матча латте</h3>
+                            <p>Японский зеленый чай с молоком</p>
+                            <span class="price">350 ₽</span>
+                        </div>
+                    </div>
+                    <!-- Desserts -->
+                    <div class="menu-item" data-category="dessert">
+                        <picture>
+                            <source srcset="img/classic-cheesecake-with-strawberry-cherry-slices-desktop.webp" type="image/webp">
+                            <img src="img/classic-cheesecake-with-strawberry-cherry-slices.jpg" alt="Чизкейк">
+                        </picture>
+                        <div class="menu-item-content">
+                            <h3>Чизкейк</h3>
+                            <p>Нежный десерт с клубникой и вишней</p>
+                            <span class="price">320 ₽</span>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-category="dessert">
+                        <picture>
+                            <source srcset="img/closeup-shot-croissant-plate-covered-chocolate-cafe-desktop.webp" type="image/webp">
+                            <img src="img/closeup-shot-croissant-plate-covered-chocolate-cafe.jpg" alt="Круассан">
+                        </picture>
+                        <div class="menu-item-content">
+                            <h3>Круассан</h3>
+                            <p>Французская выпечка с шоколадом</p>
+                            <span class="price">220 ₽</span>
+                        </div>
+                    </div>
+                    <!-- Food -->
+                    <div class="menu-item" data-category="food">
+                        <picture>
+                            <source srcset="img/grilled-sandwich-with-bacon-fried-egg-tomato-lettuce-served-wooden-cutting-board-desktop.webp" type="image/webp">
+                            <img src="img/grilled-sandwich-with-bacon-fried-egg-tomato-lettuce-served-wooden-cutting-board.jpg" alt="Сэндвич">
+                        </picture>
+                        <div class="menu-item-content">
+                            <h3>Сэндвич</h3>
+                            <p>С беконом, яйцом, томатами и салатом</p>
+                            <span class="price">380 ₽</span>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-btn next-btn" aria-label="Следующие">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+            <div class="carousel-dots"></div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <div class="section-title">
+                <h2>Галерея</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item" data-aos="zoom-in">
+                    <picture>
+                        <source srcset="img/cafe-bar-hotel-loft-style-desktop.webp" type="image/webp">
+                        <img src="img/cafe-bar-hotel-loft-style.jpg" alt="Интерьер кафе">
+                    </picture>
+                </div>
+                <div class="gallery-item" data-aos="zoom-in" data-aos-delay="100">
+                    <picture>
+                        <source srcset="img/top-view-coffee-grains-desktop.webp" type="image/webp">
+                        <img src="img/top-view-coffee-grains.jpg" alt="Кофейные зёрна">
+                    </picture>
+                </div>
+                <div class="gallery-item" data-aos="zoom-in" data-aos-delay="200">
+                    <picture>
+                        <source srcset="img/close-up-image-man-holds-coffee-with-heart-foam-top-view-desktop.webp" type="image/webp">
+                        <img src="img/close-up-image-man-holds-coffee-with-heart-foam-top-view.jpg" alt="Латте арт">
+                    </picture>
+                </div>
+                <div class="gallery-item" data-aos="zoom-in" data-aos-delay="300">
+                    <picture>
+                        <source srcset="img/male-barista-with-take-away-coffee-desktop.webp" type="image/webp">
+                        <img src="img/male-barista-with-take-away-coffee.jpg" alt="Бариста">
+                    </picture>
+                </div>
+                <div class="gallery-item" data-aos="zoom-in" data-aos-delay="400">
+                    <picture>
+                        <source srcset="img/close-up-woman-enjoying-coffee-break-desktop.webp" type="image/webp">
+                        <img src="img/close-up-woman-enjoying-coffee-break.jpg" alt="Кофе-брейк">
+                    </picture>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reservation Section -->
+    <section id="reservation" class="reservation">
+        <div class="container">
+            <div class="section-title">
+                <h2>Бронирование</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="reservation-content">
+                <div class="reservation-info">
+                    <h3>Забронируйте столик</h3>
+                    <p>Заполните форму, и мы свяжемся с вами для подтверждения бронирования</p>
+                    <div class="reservation-features">
+                        <div class="res-feature">
+                            <i class="fas fa-clock"></i>
+                            <span>Быстрое подтверждение</span>
+                        </div>
+                        <div class="res-feature">
+                            <i class="fas fa-calendar-check"></i>
+                            <span>Бесплатная отмена</span>
+                        </div>
+                        <div class="res-feature">
+                            <i class="fas fa-gift"></i>
+                            <span>Комплимент при брони</span>
+                        </div>
+                    </div>
+                </div>
+                <form class="reservation-form" id="reservationForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Имя</label>
+                            <input type="text" id="name" name="name" required placeholder="Ваше имя">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Телефон</label>
+                            <input type="tel" id="phone" name="phone" required placeholder="+7 (___) ___-__-__">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="date">Дата</label>
+                            <input type="date" id="date" name="date" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="time">Время</label>
+                            <select id="time" name="time" required>
+                                <option value="">Выберите время</option>
+                                <option value="09:00">09:00</option>
+                                <option value="10:00">10:00</option>
+                                <option value="11:00">11:00</option>
+                                <option value="12:00">12:00</option>
+                                <option value="13:00">13:00</option>
+                                <option value="14:00">14:00</option>
+                                <option value="15:00">15:00</option>
+                                <option value="16:00">16:00</option>
+                                <option value="17:00">17:00</option>
+                                <option value="18:00">18:00</option>
+                                <option value="19:00">19:00</option>
+                                <option value="20:00">20:00</option>
+                                <option value="21:00">21:00</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="guests">Количество гостей</label>
+                            <select id="guests" name="guests" required>
+                                <option value="">Выберите количество</option>
+                                <option value="1">1 гость</option>
+                                <option value="2">2 гостя</option>
+                                <option value="3">3 гостя</option>
+                                <option value="4">4 гостя</option>
+                                <option value="5">5 гостей</option>
+                                <option value="6">6 гостей</option>
+                                <option value="7+">7+ гостей</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="table">Тип столика</label>
+                            <select id="table" name="table" required>
+                                <option value="">Выберите тип</option>
+                                <option value="window">У окна</option>
+                                <option value="center">В центре</option>
+                                <option value="corner">В углу</option>
+                                <option value="terrace">На террасе</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group full-width">
+                        <label for="message">Пожелания</label>
+                        <textarea id="message" name="message" rows="3" placeholder="Дополнительные пожелания..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-submit">Забронировать</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-title">
+                <h2>Контакты</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="info-item" data-aos="fade-right" data-aos-delay="100">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>Адрес</h3>
+                            <p>ул. Ленина, 42, Москва</p>
+                        </div>
+                    </div>
+                    <div class="info-item" data-aos="fade-right" data-aos-delay="200">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h3>Телефон</h3>
+                            <p>+7 (999) 123-45-67</p>
+                        </div>
+                    </div>
+                    <div class="info-item" data-aos="fade-right" data-aos-delay="300">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h3>Часы работы</h3>
+                            <p>Пн-Пт: 8:00 - 22:00</p>
+                            <p>Сб-Вс: 9:00 - 23:00</p>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" data-aos="zoom-in" data-aos-delay="400"><i class="fab fa-telegram-plane"></i></a>
+                        <a href="#" data-aos="zoom-in" data-aos-delay="500"><i class="fab fa-vk"></i></a>
+                        <a href="#" data-aos="zoom-in" data-aos-delay="600"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="map" data-aos="fade-left">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2244.3303060478684!2d37.6173!3d55.7558!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTXCsDQ1JzIxLjUiTiAzN8KwMzcnMDIuMyJF!5e0!3m2!1sru!2sru!4v1621234567890!5m2!1sru!2sru" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 AROMA. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <!-- Success Modal -->
+    <div class="modal" id="successModal">
+        <div class="modal-overlay"></div>
+        <div class="modal-content">
+            <button class="modal-close" aria-label="Закрыть">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="modal-icon">
+                <i class="fas fa-check-circle"></i>
+            </div>
+            <h3>Бронирование отправлено!</h3>
+            <p>Спасибо за вашу заявку. Мы свяжемся с вами в ближайшее время для подтверждения бронирования.</p>
+            <button class="btn modal-btn">Отлично!</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
